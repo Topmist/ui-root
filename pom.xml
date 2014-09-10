@@ -4,7 +4,7 @@
   <groupId>org.opentosca</groupId>
   <artifactId>ui-root</artifactId>
   <packaging>war</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.1</version>
   <name>ui-root</name>
   <url>http://www.opentosca.org</url>
   
@@ -28,7 +28,33 @@
 					<wtpversion>2.0</wtpversion>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.4.2</version>
+				<executions>
+				  <execution>
+					<id>default-copy-resources</id>
+					<phase>test</phase>
+					<goals>
+					  <goal>copy-resources</goal>
+					</goals>
+					<configuration>
+					  <overwrite>true</overwrite>
+					  <outputDirectory>${project.build.directory}/ROOT/</outputDirectory>
+					  <resources>
+						<resource>
+						  <directory>${project.basedir}</directory>
+						  <include>NOTICE</include>
+						  <include>LICENSE</include>
+						</resource>
+					  </resources>
+					</configuration>
+				  </execution>
+				</executions>
+			</plugin>
 		</plugins>
+		
 	</pluginManagement>
 	
   </build>
