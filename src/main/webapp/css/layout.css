@@ -1,0 +1,253 @@
+			body {
+				margin: 0px;
+				background: url('../images/backgroundTexture.jpg');
+				font-family: calibri, verdana, arial;
+				font-size: 11pt;
+				text-align: justify;
+			}
+
+			a {
+				color: rgb(2, 118, 155);
+				font-weight: bold;
+				text-decoration: none;
+			}
+			a:hover {
+				color: rgb(241, 91, 32);
+			}	
+			/********************************************************** Page Structure *****************************************************/
+			
+			div#pageContainer {
+				height: 996px;
+				background: url('../images/backgroundStripe.jpg');
+				width: 100%;
+				float: left;
+			}
+			
+			div#page {
+				width: 1146px;				
+				position: absolute;
+				left: 50%;
+				margin-left: -573px;	
+				
+			}
+			
+				div#page > div {
+					width: 1146px;	
+					float: left;
+				}
+				
+			div#header {							
+				height: 276px;
+				background: url('../images/header.jpg');		
+			}
+			
+			div#footer {
+				height: 64px;
+				background: url('../images/footer.jpg');
+				color: rgb(212, 226, 225);
+				font-size: 12px;
+				line-height: 57px;
+				text-align: center;		
+			}	
+			
+			/********************************************************** Content *****************************************************/
+			
+			div#content > table {
+				float: left;				
+				width: 1146px; 
+				padding: 0px; 
+				margin: 0px;
+			}
+			
+			div#content > table td#menuColumn {
+				width:321px; 
+				background: url('../images/contentLeft.jpg');
+			}
+			
+			div#content > table td#menuColumn > div {
+				float: left; margin-left: 35px;
+			}
+			
+			div#content > table td#shadowTopColumn {
+				width: 31px; 
+				height: 200px;
+			}
+			
+			div#content > table td#contentColumn {
+				background: url('../images/contentRight.jpg');
+			}
+				div#content > table td#contentColumn > div {
+					width: 745px;
+				}
+			
+			div#content > table td#shadowMiddleAndBottomColumn {
+				width: 31px; 
+				overflow: hidden; 
+				padding:0px; 
+				margin: 0px; 
+				background: url('../images/contentShadowMiddle.jpg');
+			}
+						
+			div.progressbar {
+				height: 29px;
+				width: 430px;
+				float: left;
+				background: url('../images/progressbar.jpg');
+			}
+			
+			div.progressbar > div {
+				height: 29px;
+				float: left;
+				background: url('../images/progressbarAnim.gif');
+			}
+			
+			div.progressbar > div.complete {
+				height:29px;
+				float:left;
+				background:url('../images/progressbarFilled.jpg');
+			}
+				
+			a.styledButton {
+				text-decoration: none;
+				float: left;
+				height: 35px;
+			}
+			a.styledButton > div {
+				float: left;
+				height: 35px;
+			}
+			a.styledButton > div.left {
+				width: 18px;
+				background: url('../images/styledButtonLeft.jpg');
+			}
+			a.styledButton:Hover > div.left {
+				background: url('../images/styledButtonLeftHover.jpg');
+			}
+			a.styledButton:Hover > div.middle {
+				background: url('../images/styledButtonMiddleHover.jpg');												
+				color: #ffffff;
+			}
+			a.styledButton > div.middle {
+				line-height: 33px;
+				font-family: calibri, arial, verdana;
+				font-size: 10pt;
+				color: #82999C;
+				font-weight: bold;
+				padding: 0px 5px;
+				background: url('../images/styledButtonMiddle.jpg');												
+			}
+			a.styledButton > div.right {											
+				width: 18px;
+				background: url('../images/styledButtonRight.jpg');
+			}
+			a.styledButton:Hover > div.right {
+				background: url('../images/styledButtonRightHover.jpg');
+			}
+			
+			a.email {
+				color:#787878;
+				text-decoration:none;
+			}
+			a.email:HOVER {
+				text-decoration:underline;
+			}
+			
+			/********************************************************** Main Menu *****************************************************/
+			
+			div#header > div#mainMenu {
+				height: 70px;
+				width: 960px;
+				margin-left: 60px;
+				margin-top: 206px;
+			}
+			
+			div#header > div#mainMenu > a.mainMenuButton {
+				float: left;
+				height: 70px;
+			}
+			
+			div#header > div#mainMenu > a.mainMenuButton#overviewButton {
+				background: url('../images/overviewButton.jpg');
+				width: 177px;
+			}
+			div#header > div#mainMenu > a.mainMenuButton#overviewButton:hover {
+				background: url('../images/overviewButtonHover.jpg');
+			}
+			div#header > div#mainMenu > a.mainMenuButton#overviewButton.selected {
+				background: url('../images/overviewButtonSelected.jpg');
+			}
+						
+			div#header > div#mainMenu > a.mainMenuButton#deployCSARButton {
+				background: url('../images/deployCSARButton.jpg');
+				width: 224px;
+			}
+			div#header > div#mainMenu > a.mainMenuButton#deployCSARButton:hover {
+				background: url('../images/deployCSARButtonHover.jpg');
+			}
+			div#header > div#mainMenu > a.mainMenuButton#deployCSARButton.selected {
+				background: url('../images/deployCSARButtonSelected.jpg');
+			}
+			
+			div#header > div#mainMenu > a.mainMenuButton#uploadCSARButton {
+				background:url('../images/uploadButton.jpg');
+				width:0px;
+			}
+			
+			div#header > div#mainMenu > a.mainMenuButton#processButton {
+				background:url('../images/processButton.jpg');
+				width:0px;
+			}
+			
+			div#header > div#mainMenu > a.mainMenuButton#invokeButton {
+				background:url('../images/invokeButton.jpg');
+				width:0px;
+			}
+
+			div#header > div#mainMenu > a.mainMenuButton#aboutButton {
+				background: url('../images/aboutButton.jpg');
+				width: 164px;
+			}
+			div#header > div#mainMenu > a.mainMenuButton#aboutButton:hover {
+				background: url('../images/aboutButtonHover.jpg');
+			}
+			div#header > div#mainMenu > a.mainMenuButton#aboutButton.selected {
+				background: url('../images/aboutButtonSelected.jpg');
+			}
+			
+			/********************************************************** Tools *****************************************************/
+			
+			.tooltip {
+				display:none;
+				background:#666;
+				height:80px;
+				width:340x;
+				padding:10px 10px 10px 10px;
+				
+				color:#fff;
+			}
+			
+			.uploadDialog {
+				background-color:#666;
+				display:none;
+				width:auto;
+				padding:15px;
+				text-align:left;
+				border:2px solid #333;
+				/*
+				opacity:1.0;
+				-moz-border-radius:6px;
+				-webkit-border-radius:6px;
+				-moz-box-shadow: 0 0 50px #333;
+				-webkit-box-shadow: 0 0 50px #333;
+				*/
+			}
+			
+			.deleteDialog {
+				background-color:#666;
+				display:none;
+				width:auto;
+				padding:15px;
+				text-align:left;
+				border:2px solid #333;
+			}
+			
